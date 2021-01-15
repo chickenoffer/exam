@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <div class="d-flex justify-content-center">
+        <title></title>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="nav navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="主頁.html">主頁</a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="規則.html">規則</a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="相關聯賽.html">相關聯賽</a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="國手介紹.html">國手介紹</a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="比賽影片.html">比賽影片</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2></h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- 點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+
+            </ol>
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <div class="jumbotron text-center">
+                <h1>規則</h1>
+                <p>使我知道如何比賽</p>
+            </div>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://www.soeasyedu.com.tw/updimg/blog_content/810004/810004.jpg" style="width:100%">
+                </div>
+                <div class="item">
+                    <img src="data:image/jpeg;base64,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" style="width:100%">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReYFfA3FtO8iBfPYAWbpHGJUrFIx4kHjPbuA&usqp=CAU" style="width:100%">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNU3MOZDvkCzFG21oJJMMxkZgeP3wBCc6HBA&usqp=CAU" style="width:100%">
+                </div>
+                <div class="item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYMrhfz015y3rbx96AC994fRpNEaJTSyGiA&usqp=CAU" style="width:100%">
+                </div>
+                <div class="item">
+                    <img src="data:image/jpeg;base64,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" style="width:100%">
+                </div>
+            </div>
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center">
+                    <h3><a href="#a1">籃球</a></h3>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center">
+                    <h3><a href="#b">桌球</a></h3>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center">
+                    <h3><a href="#c">排球</a></h3>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center">
+                    <h3><a href="#d">羽球</a></h3>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center">
+                    <h3><a href="#e">撞球</a></h3>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center">
+                    <h3><a href="#f">飛盤</a></h3>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+    <div style="text-align:center;" id="a1">
+        <h1>籃球</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+            <tbody>
+                <tr>
+                    <th scope="col">一.</th>
+                    <td>國際籃球規則下的比賽為48分鐘，分四節，每節時為12分鐘。</td>
+                </tr>
+                <tr>
+                    <th scope="col">二.</th>
+                    <td>國際籃球球場的3分線距離籃框6.75米。</td>
+                </tr>
+                <tr>
+                    <th scope="col">三.</th>
+                    <td>國際籃球球場面積為28米*15米。</td>
+
+                </tr>
+                <tr>
+                    <th scope="col">四.</th>
+                    <td>國際籃球三秒面積為5.8米*4.9米的長方形。</td>
+                </tr>
+                <tr>
+                    <th scope="col">五.</th>
+                    <td>國際籃球比賽中暫停為5次，每隊上半時允許請求兩次暫停；下半時允許請求三次，加時賽暫停1次。</td>
+                </tr>
+                <tr>
+                    <th scope="col">六.</th>
+                    <td>國際籃球的暫停時長為1分鐘。</td>
+                </tr>
+                <tr>
+                    <th scope="col">七.</th>
+                    <td>國際籃球每次進攻限制用時為24秒（必須在24秒內進攻）。</td>
+                </tr>
+                <tr>
+                    <th scope="col">八.</th>
+                    <td>國際籃球每場比賽個人限犯規限制次數為6次。</td>
+                </tr>
+                <tr>
+                    <th scope="col">九.</th>
+                    <td>國際籃球的罰球時間限制是5秒。</td>
+                </tr>
+                <tr>
+                    <th scope="col">十.</th>
+                    <td>國際籃球臨場裁判人數為2-3人。</td>
+                </tr>
+                <tr>
+                    <th scope="col">十一.</th>
+                    <td>每場比賽超過犯規次數的罰球，國際籃球規則為每節球隊第5次犯規。</td>
+                </tr>
+                <tr>
+                    <th scope="col">十二.</th>
+                    <td>攻擊方不得在禁區待超過3秒 發球不得超過5秒。</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div><br><br><br>
+    <div style="text-align:center;" id="b">
+        <h1>桌球</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+            <tbody>
+                <tr>
+                    <th scope="row">發球.</th>
+                    <td>發球開始時，球自然地置於非持拍手的手掌上，手掌平坦張開，保持靜止。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>發球時，發球員必須以非持拍手將球幾乎垂直地向上拋起，且不得使球旋轉，並使球在離開非持拍手的手掌之後上升至少16公分。球離開手掌到被擊出前不能碰觸任何物體，亦不得以服裝或身體任意部位做出遮擋行為，使接發球員看不見完整的發球過程，若有則判為犯規。</td>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>當球從拋起的最高點下降時，發球員才可擊球，之後使球首先觸及發球方台區，然後越過或繞過球網裝置，再觸及接發球方台區。若球在發球過程中觸碰到球網裝置，必須重新發球。雙打中，球應先後觸及發球方和接發球方的右半區。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>從發球開始，到球被擊出，球要始終在台面以上和發球員的端線以外以防桌內發球犯規，而且不能被發球員或其雙打同伴的身體或衣服的任何部分擋住，否則亦視同犯規。</td>
+                </tr>
+                <tr>
+                    <th scope="row">擊球</th>
+                    <td>對方發球或回擊後，本方球員應予擊球使球直接觸及對方檯區，或觸及球網組合後再觸及對方檯區。</td>
+                </tr>
+                <tr>
+                    <th scope="row">失分</th>
+                    <td>未能合法發球。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>未能合法還擊。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>擊球後，該球沒有觸及對方台區而離開球檯。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>阻擋；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>同一方連擊；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>用不符合規則條款的拍面擊球；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>運動員或運動員穿戴的任何物件使球檯移動；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>運動員穿戴的任何物件觸及球網裝置；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>非執拍手觸及比賽台面；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>雙打運動員擊球次序錯誤；</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>執行輪換發球法時，發球一方被接發球一方或其雙打同伴，包括接發球一擊，完成了13次合法還擊。</td>
+                </tr>
+                <tr>
+                    <th scope="row">一局比賽</th>
+                    <td>在一局比賽中，先得11分的一方為勝方；10平後，先多得2分的一方為勝方。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>通常在國際正式比賽，單項賽（單打、雙打）採用七局四勝制，團體賽中的單打或雙打採用五局三勝制。在巡迴公開賽中的雙打雖然亦為單項賽，但採用五局三勝制。</td>
+                </tr>
+                <tr>
+                    <th scope="row">次序和方位</th>
+                    <td>在獲得2分後，接發球方變為發球方，依此類推，直到該局比賽結束，或直至雙方比分為10平，或採用輪換發球法時，發球和接發球次序不變，但每人只輪發1分球。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>在雙打中，每次換發球時，前面的接發球員應成為發球員，前面的發球員的同伴應成為接發球員。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>在一局比賽中首先發球的一方，在該場比賽的下一局中應首先接發球，在雙打比賽的決勝局中，當一方先得5分後，接發球一方必須交換接發球次序。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>一局中，在某一方位比賽的一方，在該場比賽的下一局應換到另一方位。在決勝局中，一方先得5分時，雙方應交換方位。</td>
+                </tr>
+                <tr>
+                    <th scope="row">間歇</th>
+                    <td>在局與局之間，有不超過1分鐘的休息。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>在一場比賽中，雙方各有一次不超過1分鐘的暫停。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>每局比賽中，每得6分球後，或決勝局交換方位時，有短暫的時間擦汗。</td>
+                </tr>
+        </table>
+    </div><br><br><br>
+    <div style="text-align:center;" id="c">
+        <h1>排球</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+            <tbody>
+                <tr>
+                    <th scope="row">違例與犯規</th>
+                    <td>連擊：單人連續擊球兩次以上（除第一接傳、或攔網時接觸身體多個部位、或攔網後接一傳）</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>持球：球停留於手中（通常以裁判的個人主觀角度來決定）</td>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>4次擊球：一方隊伍擊球四次（含）以上（攔網觸球不算在內）</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>過網擊球：對方球員未完成攻擊性擊球前或同時，於對方空間觸球</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>位置錯誤：位置錯誤（只和前後左右有關）發球方由主審裁定，接發球方由二審裁定；或輪轉錯誤（發球員）</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>觸網：根據2015年最新規則，只要碰觸網子即算觸網</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>後排違例：後排不能攔網。</td>
+                </tr>
+                <tr>
+                    <th scope="row">暫停和換人</th>
+                    <td>每局比賽各隊有兩次普通暫停機會，時間三十秒。比賽有一隊先到八分或十六分時，各有一次技術暫停的機會（決勝局除外），時間六十秒，是否給予暫停也可以由主審來裁定。
+                        <br>
+                        每局比賽各隊均有六次換人的機會。主力隊員只能退出比賽一次，同一局中再次上場比賽時，只能和剛才的人換。替補隊員每局只能上下場各一次，可以替換任何一個主力隊員；同一局中只能由被他替換下場的隊員來替換。
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">得分</th>
+                    <td>早期的排球比賽採用的是發球權得分制。隊伍（己方）先要取得「發球權」成為發球方，然後在對陣中取勝對方，便得一分，並持續擁有「發球權」。相反，如發球方（己方）在對陣中敗陣，雖然對方未能即時得分，但「發球權」便轉移到對方。
+                        <br>
+                        目前世界各地實行的是每球得分制。改成每球得分制後，會讓比賽更刺激，雙方會更積極珍惜每一球。
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br><br>
+    <div style="text-align:center;" id="d">
+        <h1>羽球</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+
+            <tbody>
+                <tr>
+                    <th scope="row">賽制</th>
+                    <td>現代羽球賽分為男單、女單、男雙、女雙及混雙，共5個單項。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>羽球的計分制度最初採取15分制（發球得分制），通常採用「三局兩勝制」。</td>
+
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>但舊制的明顯缺點為：比賽長度不易受到控制，容易導致比賽持續時間過長，削弱觀眾的觀看欲望，以及不利於電視轉播和吸引更多贊助商。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>為了縮短比賽長度，國際羽球總會曾從2001年6月1日起，試行每局7分和「五局三勝制」的新賽制。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>雖然新賽制在理論上縮短了比賽長度，但實際效果並不明顯，而且遭到了許多行內人士的批評，他們的理由是：7分制使比賽變得簡單粗糙，缺乏觀賞價值。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>國際羽總最終在實行新賽制一年後，恢復每局15分制和「三局兩勝制」。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>2006年5月6日，國際羽總通過21分新賽制（落地得分制），同時規定：每局某方先到達11分時可休息60秒，第一局完和第二局之間、第二局完和第三局之間可以有2分鐘的休息時間。</td>
+                </tr>
+                <tr>
+                    <th scope="row">球具</th>
+                    <td>羽球由16根羽毛及球托組成。羽毛長62－70毫米，頂端圍成圓形。球托直徑25～28毫米，重量4.74－5.5克，底部為半球體。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>羽球拍的長度不得大於680毫米，拍面的長度應低於290毫米，寬度低於230毫米。</td>
+                </tr>
+                <tr>
+                    <th scope="row">場地</th>
+                    <td>標準的羽球場為長方形，長度13.4米，寬度6.1米，天花板的高度應大於6.1米。羽球場的網柱必須固定在地面上，有效高度為1.55米。球網頂部至地面的高度為1.524米。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>場地線寬40毫米，須用白色或黃色的顏料畫出，並在球場的邊線及底線以外分別要留出1米和2米以上的安全空間。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>羽球球網用深色纖維製成，網孔大小15－20毫米，球網長6.10米，寬0.76米。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>邊線：
+
+                        單打邊線為場地內邊線
+                        雙打邊線為場地外邊線</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>底線：單、雙打的底線均為最外側的底線。</td>
+                </tr>
+                <tr>
+                    <th scope="row">發球與接發球</th>
+                    <td>發球時，雙方球員必須站在對角的發球區，兩腳觸地，但不能踏及發球區的界線。發球時球拍必須先中球托部份，球要從低於115公分的位置發出，而整個發球過程中，球拍拍頭應指向下方。<br>
+                        單打比賽中，當發球方的得分為偶數時，球員應站在右方發球區內準備發球或接發球。奇數時為左方發球區。<br>
+                        雙打比賽中，當發球方的得分為偶數時，由右方球員站在右方發球區內準備發球或接發球。奇數時為左方球員發球。發球後第一拍，只有接發球的球員才可以擊球，此後不限，直至其中一方犯規或球落地。
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">得分</th>
+                    <td>發球後，比賽便算正式開始，雙方球員交替擊球，直至一方犯規或球落在其中一方的場區內。在21分制中採用每球直接得分的計算方法。在得分的同時也相應獲得發球權，當連續得分的時候，球員在自己的兩個發球區內交替發球。每局雙方打到20平手後，一方連續得2分即算該局獲勝。比分並非無限延長，先取得30分者則為勝方。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>在舊制（15分制）比賽裡，只有發球方才能得分。單打比賽發球方若未得分，改由對方取得發球權重新發球。雙打比賽發球方兩位選手均有發球權，第一位發球員若未得分，改由第二位發球員重新發球；第二位發球員若未得分，則改由對方取得發球權重新發球。當比賽雙方打成13平、14平，先獲13或14分的一方，有權決定雙方加打5分或3分（女單出現9平或10平時，可分別要求加打3分或2分）。</td>
+                </tr>
+                <tr>
+                    <th scope="row">違例</th>
+                    <td>在發球後至球落地前的「比賽進行時」中，接發球隊員違例，則判發球方得分。</td>
+                </tr>
+                <tr>
+                    <th scope="col">一.</th>
+                    <th scope="col">發球高度：擊球時，羽球擊球點高於1.15米。</th>
+                </tr>
+                <tr>
+                    <th scope="col">二.</th>
+                    <td>非法延誤發球。</td>
+                </tr>
+                <tr>
+                    <th scope="col">三.</th>
+                    <td>發球撃球時，球桿指向並非向下。</td>
+
+                </tr>
+                <tr>
+                    <th scope="col">四.</th>
+                    <td>發球撃球時，沒有擊中羽球底部。</td>
+                </tr>
+                <tr>
+                    <th scope="col">五.</th>
+                    <td>出界：擊出的球落在有效區域以外，沒有過網或穿過球網或在網下進入對方場區。</td>
+                </tr>
+                <tr>
+                    <th scope="col">六.</th>
+                    <td>過網擊球：不在自己的場區內擊球，即球員的球拍和身體進入對方場區。</td>
+                </tr>
+                <tr>
+                    <th scope="col">七.</th>
+                    <td>持球：將球擊出前，球在拍上有停滯，或有拖帶動作。</td>
+                </tr>
+                <tr>
+                    <th scope="col">八.</th>
+                    <td>連擊：同一球員連續擊球2次以上，或球過網前同隊球員連續擊球。</td>
+                </tr>
+                <tr>
+                    <th scope="col">九.</th>
+                    <td>觸網：球員的球拍、身體或衣物觸網。</td>
+                </tr>
+                <tr>
+                    <th scope="col">十.</th>
+                    <td>阻礙對方合法擊球，或以其它行為故意騷擾對方球員。</td>
+                </tr>
+                <tr>
+                    <th scope="col">十一.</th>
+                    <td>球接觸到場邊的物體牆壁，例如:天花板，電燈。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br><br>
+    <div style="text-align:center;" id="e">
+        <h1>撞球</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+            <tbody>
+                <td class="sites-layout-tile sites-tile-name-content-1">
+                    <div dir="ltr">
+                        <font>基本介紹：</font>
+                        <div>14-1是撞球運動的其中一種玩法，在9號球和8號球興盛之前，是相當常見的撞球運動比賽項目，當時在美國非常流行。</div>
+                        <div>14-1的比賽目標就是將子球一一打進袋，取得比賽前協議好的分數，打進一顆球得一分，不得犯規。通常比賽的目標設定為100分，意指至少須打進100顆球才能獲勝，而職業賽通常要求150分。14.1是一種指定袋口的比賽，選手必須指定目標球號及欲入袋的袋口，目標球落袋的方式不限，只要落入指定的袋口即可。</div>
+                        <div><br /></div>
+                        <div><br /></div>
+                        <div>
+                            <div>
+                                <font>14-1球玩法：</font>
+                            </div>
+                            <div><br /></div>
+                            <div>14-1 使用一顆母球，以及 1 號到 15 號為目標球（也稱為色球或子球）。在這個遊戲中可以撞擊任何目標球，不過選手在擊球之前必須先指定目標球，並且指定球袋，把指定球擊落指定的球袋才算得分，否則不予計分，這稱為「呼叫撞擊制」亦稱指定擊球，違反了這一項規則就喪失（出桿）擊球權，由對手取得擊球的權利。</div>
+                        </div>
+                        <div><br /></div>
+                        <div><br /></div>
+                        <div>
+                            <div>
+                                <font>首局排球：</font>
+                            </div>
+                            <div><br /></div>
+                            <div>14.1首局的球堆是全部15顆子球排在三角框裡，最前端的子球中心剛好落在腳點上。<span style="background-color:transparent">傳統的排法是將1號球排在球堆的右側角，5號則在左側角，剩下的球就任意排放，球與球之間必須緊密相連。然而，有些人認為擺放大花的球</span><span style="background-color:transparent">在球堆的最前端是種禮貌。</span></div>
+                        </div>
+                        <div><span style="background-color:transparent">
+                                <div style="display:block;text-align:left"><a href="https://sites.google.com/site/zhuangqiujieshaokecheng/zhuang-qiu-ji-ben-gui-ze/14-1qiu-wan-fa/14.png?attredirects=0" imageanchor="1"><img border="0" height="278" src="https://sites.google.com/site/zhuangqiujieshaokecheng/_/rsrc/1401893582900/zhuang-qiu-ji-ben-gui-ze/14-1qiu-wan-fa/14.png?height=278&amp;width=320" width="320" /></a></div>
+                                <div style="display:block;text-align:left">
+                                    <div><br /></div>
+                                    <div>局間排球：</div>
+                                    <div><br /></div>
+                                    <div>因為14.1的比賽通常得贏得超過15分以上的分數才能獲勝（職業賽通常為150分），所以都得進行多局，而局與局間的排球方式與首局排球的方式有所不同。</div>
+                                    <div>若比賽進行到只剩下母球和一顆子球留在檯面上時，此局結束。如果最後母球和子球沒有停留在排球區裡，也不影響排球的動作，擺放其餘的14顆子球時，最前端的球位為空缺，而球堆的擺放位置以空缺的球位中心對應到腳點的位置為準，原來剩餘的母球和一顆子球的位置不變，接著進行下一局。</div>
+                                    <div>若為局間排球，就把最前端的球位<span style="background-color:transparent">空下</span><span style="background-color:transparent">（也就是圖裡的9號球的位置）</span></div>
+                                    <div><br /></div>
+                                    <div><br /></div>
+                                    <div>一局結束時，母球和子球停留的位置會影響到下局排球方式的不同，請見以下表格：</div>
+                                </div>
+                            </span>
+                            <table style="font-size:14px;margin-top:1em;margin-bottom:1em;border:1px solid rgb(170,170,170);border-collapse:collapse;color:black;font-family:sans-serif;line-height:22.399999618530273px;background-color:rgb(249,249,249)">
+                                <caption><b>14.1局間排球的規則</b></caption>
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2" style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">最後子球</th>
+                                        <th colspan="3" style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">最後母球</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">在排球區內</th>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">不在排球區內也不在<a href="http://zh.wikipedia.org/w/index.php?title=%E9%A0%AD%E9%BB%9E&amp;action=edit&amp;redlink=1" style="text-decoration:none;color:rgb(165,88,88);background:none" title="頭點 (頁面不存在)" rel="nofollow">頭點</a>上</th>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">在頭點上</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">在排球區內</th>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：腳點<br />母球：開球區</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：頭點<br />母球：原位置</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E9%BB%9E" style="text-decoration:none;color:rgb(11,0,128);background:none" title="中點" rel="nofollow">中點</a><br />母球：原位置</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">進袋</th>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：腳點<br />母球：開球區</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：腳點<br />母球：原位置</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：腳點<br />母球：原位置</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">
+                                            <font color="#000000"><a href="http://zh.wikipedia.org/w/index.php?title=%E9%A0%AD%E7%B7%9A&amp;action=edit&amp;redlink=1" style="text-decoration:none;background:none" title="頭線 (頁面不存在)" rel="nofollow">頭線</a>之</font>後<br />且不在頭點上
+                                        </th>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：原位置<br />母球：頭點</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em"></td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em"></td>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">不在頭線之後<br />也不在排球區內</th>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：原位置<br />母球：開球區</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em"></td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em"></td>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:1px solid rgb(170,170,170);padding:0.2em;text-align:center;background-color:rgb(242,242,242)">在頭點上</th>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em">子球：原位置<br />母球：中點</td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em"></td>
+                                        <td style="border:1px solid rgb(170,170,170);padding:0.2em"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>14.1的名稱來自於局與局之間的排球方式（14顆重新排列的子球加上一顆留在原位且未重新排列的子球）。</div>
+                            <div>接著出桿的選手通常會先打進那顆未排列的子球，讓母球能夠順勢撞擊球堆使子球散開，方便繼續進攻得分。</div>
+                            <div><br /></div>
+                            <div><br /></div>
+                            <div>
+                                <font color="#ff0000">犯規：如果一名選手出現犯規，他將被扣除1分，必要的時候該球按照規則被重置。上場選手就母球停留的位置開始擊打，除非規則特殊說明。</font>
+                            </div>
+                            <div><br /></div>
+                            <div>以下為14-1連續擊球比賽中的一般犯規：</div>
+                            <div>(a) 母球入袋或離開球檯；</div>
+                            <div>(b) 母球先接觸非法球；</div>
+                            <div>(c) 合法接觸後未碰庫邊；</div>
+                            <div>(d) 選手擊球瞬間雙腳同時離地；</div>
+                            <div>(e) 球離開檯面；</div>
+                            <div>(f) 接觸球</div>
+                            <div>(g) 連擊/貼球</div>
+                            <div>(h) <span style="background-color:transparent">擊球過慢</span><span style="background-color:transparent">；</span></div>
+                            <div>(i) 檯面上有球尚未完全靜止時擊球；</div>
+                            <div>(j) 非法母球位置；</div>
+                            <div>(k) 開球線後的非法擊打；</div>
+                            <div>(l) 放置球桿在檯面上；</div>
+                            <div>(m) 違反進攻順序。</div>
+                            <div><br /></div>
+                            <h2 style="color:black;font-weight:normal;margin:1em 0px 0.25em;overflow:hidden;padding:0px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgb(170,170,170);font-size:1.5em;font-family:Linux Libertine,Georgia,Times,serif;line-height:1.3;background-image:none;background-repeat:initial"><a name="TOC-1"></a><br /></h2>
+                        </div>
+                        <div><br /></div>
+                    </div>
+                </td>
+
+
+                <tr>
+                    <td class="sites-layout-tile sites-tile-name-content-1">
+                        <div dir="ltr">
+                            <div>九號球基本介紹：</div>
+                            <div><br /></div>
+                            <div>九號球是撞球運動的其中一種玩法，起源於1920年代的美國。在任何社交場合，不論人數多寡都可玩九號球（大多是一對一），只要在遊戲開始前定好規則即可；在聯盟或巡迴賽的場合裡，選手的人數和規則是由比賽贊助者訂定。以往，不論是職業級或是業餘級，九號球常被當作「賭博性的遊戲」，但現今的大型巡迴賽裡，九號球的光環未失。</div>
+                            <div>近年來，九號球成為美國境內巡迴錦標賽的其中運動之一，主要是因為比賽速度較快，符合電視轉播的時間限制，而持續吸引觀眾的參與。多年來，運動頻道ESPN是主要促進九號球運動的推手，也是巡迴錦標賽的贊助者。</div>
+                            <div><br /></div>
+                            <div><br /></div>
+                            <div>
+                                <div>玩法與規則：</div>
+                                <div><br /></div>
+                                <div>比賽目標就是在不違規的情況下，依據當場比賽的規定，將9號球打入袋。</div>
+                                <div>9號球的比賽裡，母球必須在碰撞到其他子球前，先撞擊到檯面上數字最小的子球否則就是犯規。依上述原則下，子球可不必依照號碼順序進袋，只要母球先碰擊到號碼最小的子球即可。因為不必指定子球落袋的袋口，若選手將9號球幸運地打進任何袋口，即贏得勝利，開球時也是如此。</div>
+                            </div>
+                            <div>比賽時，選手在失誤、犯規之前，可持續出桿，若犯規，必須交由對手出桿，對手擁有「自由球」，可在出桿前，在檯桌上自由擺放母球的位置以利進攻。</div>
+                            <div>9號球算是比賽節奏相當快速的比賽。一般來說，最先贏得某局數（通常是5局、7局或9局，依比賽規則決定）的選手就獲得當場比賽勝利。</div>
+                            <div><br /></div>
+                            <div><br /></div>
+                            <div>排球：</div>
+                            <div><br /></div>
+                            <div>九顆子球排成菱形的球堆，1號球放在最前面的頂點（開球線那端），9號放在球堆中心處，其餘的球可不依號碼順序排放。</div>
+                            <div>排放子球時必須特別準確，尤其是聯賽或巡迴賽。若子球沒有緊密相連、球堆排列不對中線、1號球不在排球點上，該局開球的選手可要求重新排列。</div>
+                            <div>
+                                <div style="display:block;text-align:left"><a href="https://sites.google.com/site/zhuangqiujieshaokecheng/zhuang-qiu-ji-ben-gui-ze/9hao-qiu-wan-fa/9ball.png?attredirects=0" imageanchor="1"><img border="0" height="320" src="https://sites.google.com/site/zhuangqiujieshaokecheng/_/rsrc/1401909216454/zhuang-qiu-ji-ben-gui-ze/9hao-qiu-wan-fa/9ball.png?height=320&amp;width=219" width="219" /></a></div>
+                                <div style="display:block;text-align:left">
+                                    <div><br /></div>
+                                    <div>衝球：</div>
+                                    <div><br /></div>
+                                    <div>一般性的比賽常用丟銅板來決定先開球的一方；若在職業比賽裡，兩方選手會先比球，將擺在開球線的球打到對面檯邊，球滾回來之後，越靠近底部檯邊的一方就能取得首局開球權，而台灣的比賽通常規定勝方開球。</div>
+                                    <div>如果選手開球後有子球進袋，同時也沒有犯規，可繼續出桿；若沒有子球進袋，則換對方出桿。如果開球後，9號球直接進袋，即算當局勝利。</div>
+                                    <div><br /></div>
+                                    <div>
+                                        <div>獲勝方式：</div>
+                                        <div><br /></div>
+                                        <div>選手只要在不犯規的情況下，無論是用母球直接打進9號，或是先撞擊8號以下的子球再把9號球打進袋（此稱組合球），都算是贏得當局勝利。</div>
+                                        <div>若對方連續三次犯規，我方即勝利。然而，在多數比賽裡，對方必須先被告知「已二次連續犯規」，第三次的犯規才能判定有效，我方才能勝利。</div>
+                                    </div>
+                                    <div><br /></div>
+                                    <div><br /></div>
+                                    <div>
+                                        <div>以下為9號球犯規的情況：</div>
+                                        <div><br /></div>
+                                        <div>1.母球未先撞擊到號碼最小的子球。</div>
+                                        <div>2.母球並未撞擊任何子球。</div>
+                                        <div>3.母球撞擊目標子球之後，母球或任何子球並未碰到檯面的顆星邊。若目標子球進袋，則不在此限。</div>
+                                        <div>4.母球落袋。</div>
+                                        <div>5.出桿時，身體或衣物碰觸到檯面上的球。</div>
+                                        <div>6.出桿之後，母球或子球再度碰撞球桿。</div>
+                                        <div>7.母球或子球飛離檯桌。</div>
+                                        <div>8.出桿時，兩腳同時離開地面。</div>
+                                    </div>
+                                </div>
+                                <div style="display:block;text-align:left"><br /></div><br />
+                            </div>
+                            <div><br /></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sites-layout-tile sites-tile-name-content-1">
+                        <div dir="ltr">基本介紹： <div><br /></div>
+                            <div>8號球是撞球運動的一個項目，在全球頗為流行，近年有越來越多8號球的國際業餘賽或職業賽。比賽時，球桌上會有16顆球，包含一個母球和15顆子球，球桌有6個袋口。</div>
+                            <div><br /></div>
+                            <div><br /></div>
+                            <div>
+                                <div>如何排球：</div>
+                                <div><br /></div>
+                                <div>比賽開始時，子球放在三角框裡，三角框的底部與腳顆星平行（球桌的短邊），前後的位置以最前端的球對應到腳點為準。排子球時，從球堆後端往前推向第一顆球，使得子球緊密相連。根據世界標準規則，8號球必須放在最中間的位置，而左下角和右下角的子球必須一球為大花9~15、一球為小花1~7（請見下圖）。</div>
+                                <div>母球可依選手要求擺放在開球區裡。</div>
+                            </div>
+                            <div>
+                                <div style="display:block;text-align:left"><a href="https://sites.google.com/site/zhuangqiujieshaokecheng/zhuang-qiu-ji-ben-gui-ze/8hao-qiu-wan-fa/619px-Eight_Ball_Rack_2005_SeanMcClean.jpg?attredirects=0" imageanchor="1"><img border="0" height="309" src="https://sites.google.com/site/zhuangqiujieshaokecheng/_/rsrc/1401909534820/zhuang-qiu-ji-ben-gui-ze/8hao-qiu-wan-fa/619px-Eight_Ball_Rack_2005_SeanMcClean.jpg?height=309&amp;width=320" width="320" /></a></div>
+                                <div style="display:block;text-align:left"><br /></div>
+                                <div style="display:block;text-align:left">
+                                    <div>開球：</div>
+                                    <div><br /></div>
+                                    <div>獲得開球權的選手（賽前決定，可以下列方法決定：丟銅板、前一局的輸贏、比球）先把球堆衝開，如果開球犯規（少於四顆球碰到顆星邊），對手可以要求重新開球且成為開球者，或是以目前的球況繼續比賽。</div>
+                                    <div>如果開球後有進袋，開球方可以繼續出桿，球局仍然為「開放」的狀態（意指開球方還可自由選擇要打大花或小花）。如果開球方第二次出桿沒有球進袋，球局依然是「開放」，直到有子球落袋為止。</div>
+                                    <div>根據《世界標準規則》，如果8號球在開球時就進袋了，開球方可要求重新排球或將8號球擺在腳點上，繼續比賽。若開球時母球和8號球都進袋了，接著出桿的選手有權要求重新開球，或將8號球擺在腳點上，母球任意擺在開球區裡繼續比賽。</div>
+                                    <div><br /></div>
+                                    <div>
+                                        <div><br /></div>
+                                        <div>輪替：</div>
+                                        <div><br /></div>
+                                        <div>一方選手（或隊伍）在出桿犯規或無球進袋之後，便停止出桿，換由另一方選手出桿，比賽依此方式進行。犯規之後，接著出桿的選手有自由球的機會將球擺在球桌上的任何位置。</div>
+                                    </div>
+                                    <div><br /></div>
+                                    <div><br /></div>
+                                </div>
+                                <div style="display:block;text-align:left"><span style="background-color:transparent">打法：</span></div>
+                                <div><br /></div>
+                                <div>開球後的第一桿，選手若將大花球打進，往後他只能將大花球打進袋，另一方選手則打小花球。</div>
+                                <div>一旦一方選手將他的子球都打進袋了，需再把8號球打進他指定的袋口才獲勝，若進錯袋或出桿犯規，則輸掉當局，否則其出桿權結束。</div>
+                            </div>
+                            <div><br /></div>
+                            <div><br /></div>
+                            <div>
+                                <div>獲勝方式：</div>
+                                <div><br /></div>
+                                <div>打進自己所有的子球後（大花或小花），在不違規的情況下，將8號球打進袋口。</div>
+                                <div>對手以犯規的方式將8號球打進（例：在打進他所有的子球前或打進不是他指定的袋口），我方獲勝。</div>
+                                <div>對手在打8號球時，若使母球進袋或跳離球桌，我方獲勝。假使8號球尚未進袋，母球進袋或跳離球桌，只算犯規，還不算輸。</div>
+                                <div>對手在打8號球時犯規，我方獲勝。（在非正式比賽的場合裡，只視作犯規）</div>
+                                <div>對手將8號球打離球桌，我方獲勝。</div>
+                            </div>
+                            <div><br /></div>
+                            <div><br /></div>
+                            <div>
+                                <div>犯規：</div>
+                                <div><br /></div>
+                                <div>出桿後，母球未第一時間撞擊我方的子球。</div>
+                                <div>母球撞擊子球（或8號球）後，母子球皆沒有碰到顆星邊，或子球未入袋。</div>
+                                <div>母球洗袋。</div>
+                                <div>選手兩腳皆離開地面。</div>
+                                <div>在檯面上的球尚未完全靜止時即出桿。</div>
+                                <div>球杆多次碰擊母球。</div>
+                                <div>除了使用球杆尖頭之外，其餘地方碰到母球。</div>
+                                <div>除了自由球外，選手其身體、衣物或球具碰觸到桌面上的球。</div>
+                                <div>球跳離檯桌。</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div><br><br><br>
+    <div style="text-align:center;" id="f">
+        <h1>飛盤</h1>
+    </div>
+    <div class="container">
+        <table class="table table-dark">
+
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td>終極飛盤的得分以一分為一單位，進攻方在對手的得分區接到盤子即算一分。
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>持盤者不可帶盤走步 (travel)，但可以以一腳為軸心變換角度，換句話說飛盤的移動只能由拋接扔擲進行，而非與人一起前進。進攻的傳接次數並沒有限制，最少次數的情形是持盤者以長傳直接傳至對手得分區，若同隊隊友於得分區合法接到飛盤即獲得一分。相反的，持盤的進攻方也可以在己方隊友間進行無數次傳接，傳接次數與方向皆無限制，只要最後的接盤在對手得分區即可獲得一分。
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>若傳接時發生漏接、飛盤觸地、傳盤出界、出界接盤、遭敵方空中抄截或拍落，則攻守交換，由方才的防守方進攻另一方向的得分區。 終極飛盤是非肢體接觸性運動，任何有意的碰撞或含肢體接觸的攔阻皆為犯規。防守一方的選手必須在無肢體接觸的情況下攔截對方的傳接，並不可與持盤者搶盤。有意圖的肢體接觸應由選手主動指出犯規，屆時比賽暫停。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>一對一防守敵隊的持盤者(稱marking)是合法的，該防守者可高聲數十秒，數至十秒盤仍未由持有者傳出則攻守交換。防守者時必須在敵方持盤者的直徑三公尺內才可數秒，並不可有多於一人防守數秒，此外防守者的手臂必須伸直，不可做環抱狀(wrapping)。</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>終極飛盤通常不具有裁判，比賽秩序需仰賴運動員自身的精神與誠實，統稱「比賽(運動員)精神」(Spirit of the Game)。若有選手指認(call)犯規，雙方須暫停比賽互相協調，若其中一方在攔阻時犯規，並經由雙方確認犯規，則該攔阻無效，飛盤應交付原傳接動作的接盤員。若雙方無法決定犯規與否，則飛盤須歸還給原傳接動作的傳盤員，所有選手應退回傳盤前的位置，重新進行傳盤。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br><br>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Design By Myself</small>
+        </div>
+    </footer>
+
+</body></html>
